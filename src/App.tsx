@@ -1,9 +1,17 @@
 import React from 'react';
 import './App.sass';
+import {Route, Switch} from 'react-router-dom';
+import Home from './home';
+import Projects from './projects';
+import ProjectId from './projectId';
 
 function App() {
   return (
-    <h1>LOL</h1>
+    <Switch>
+      <Route path="/" component={Home} exact />
+      <Route path="/projects" component={Projects} />
+      <Route path="/projects/:id" component={ProjectId}/>
+    </Switch>
   );
 }
 
