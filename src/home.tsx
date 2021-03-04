@@ -1,10 +1,11 @@
 import React from 'react';
+import MyImage from './assets/me.jpg';
+import { MyImageEl, ImgContainer } from './components/home';
 
 function Home() {
     return (
         <div>
             <Hero />
-            <Description />
             <Skills />
         </div>
     )
@@ -12,14 +13,13 @@ function Home() {
 
 function Hero() {
     return (
-        <div className="hero">HERO</div>
-    )
-}
-
-
-function Description() {
-    return (
-        <div className="description">Description</div>
+        <div>
+            <div className="hero is-info is-fullheight">
+                <ImgContainer>
+                    <MyImageEl src={MyImage} />
+                </ImgContainer>
+            </div>
+        </div>
     )
 }
 
