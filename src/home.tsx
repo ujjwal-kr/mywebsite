@@ -17,6 +17,11 @@ function Hero() {
             <div className="hero is-info is-fullheight">
                 <ImgContainer>
                     <MyImageEl src={MyImage} />
+                    <br/>
+                    <br/>
+                    <p className="title">
+                        Meow Meow
+                    </p>
                 </ImgContainer>
             </div>
         </div>

@@ -5,6 +5,12 @@ export const MyImageEl = styled.img`
     height: 30rem;
     border-radius: 50%;
     border: 5px solid #ff1c5c;
+    margin-top: -5em;
+    @media all and (max-width: 800px) {
+        width: 20rem;
+        height: 20rem;
+        margin-top: -15em;
+    }
 `
 
 export const ImgContainer = styled.div`
