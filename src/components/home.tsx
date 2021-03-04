@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const MyImageEl = styled.img`
-    width: 30rem;
-    height: 30rem;
+    width: 28rem;
+    height: 28rem;
     border-radius: 50%;
     border: 5px solid #ff1c5c;
     margin-top: -5em;
     @media all and (max-width: 800px) {
-        width: 20rem;
-        height: 20rem;
+        width: 18rem;
+        height: 18rem;
         margin-top: -15em;
     }
 `
@@ -19,6 +19,6 @@ export const ImgContainer = styled.div`
     margin: auto;
 `
 
-export const Description = styled.div`
-    
-`
+export const Name = styled.p``
+
+export const Description = styled.p``
