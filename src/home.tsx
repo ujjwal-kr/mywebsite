@@ -1,10 +1,8 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import MyImage from './assets/me.jpg';
-import { MyImageEl, ImgContainer, Name, Description } from './components/home';
+import { MyImageEl, ImgContainer, Name } from './components/home';
 import { motion } from 'framer-motion';
-import Typewriter from 'typewriter-effect/dist/core';
-
-
+import './glitch.scss';
 function Home() {
     return (
         <div>
@@ -15,28 +13,18 @@ function Home() {
 }
 
 function Hero() {
-    useEffect(() => {
-        new Typewriter('#description', {
-            strings: ['I\'m a Web Dev and Computer Hacker'],
-            autoStart: true,
-          });
-    })
-
     return (
         <div>
-            <div className="hero is-info is-fullheight">
+            <div className="hero is-info is-fullheight" style={{overflow: 'hidden'}}>
                 <ImgContainer>
                     <motion.div animate={{scale: 1.1}}>
                         <MyImageEl src={MyImage} />                    
                     </motion.div>
                     <br/>
                     <br/>
-                    <Name className="title">
+                    <Name className="glitch" data-text="Hi, I'm Ujjwal">
                         Hi, I'm Ujjwal
                     </Name>
-                    <Description className="title" id="description">
-                        
-                    </Description>
                 </ImgContainer>
             </div>
         </div>

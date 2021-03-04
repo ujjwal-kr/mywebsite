@@ -9,7 +9,12 @@ export const MyImageEl = styled.img`
     @media all and (max-width: 800px) {
         width: 18rem;
         height: 18rem;
-        margin-top: -15em;
+    }
+
+    @media all and (max-width: 350px) {
+        width: 15rem;
+        height: 15rem;
+        margin-top: -3em;
     }
 `
 
@@ -19,6 +24,12 @@ export const ImgContainer = styled.div`
     margin: auto;
 `
 
-export const Name = styled.p``
-
-export const Description = styled.p``
+export const Name = styled.p`
+    margin-top: 1em;
+    font-size: 3.5em;
+    @media all and (max-width: 800px) {
+        margin-top: .7em;
+        font-size: 3em;
+        line-height: 1.2;
+    }
+`
