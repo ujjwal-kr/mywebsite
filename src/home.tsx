@@ -1,6 +1,6 @@
 import React from 'react';
 import MyImage from './assets/me.jpg';
-import { MyImageEl, ImgContainer, Name } from './components/home';
+import { MyImageEl, ImgContainer, Name, Description } from './components/home';
 import { motion } from 'framer-motion';
 import './glitch.scss';
 function Home() {
@@ -41,6 +41,13 @@ function Hero() {
                     </motion.div>
                 </ImgContainer>
             </div>
+
+            <Description>
+                <h1 style={{fontSize:'4em'}} className="has-text-primary stiff">whoami</h1>
+                <p style={{fontSize:'2em'}}>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus eaque dolores natus nemo id quas in autem, nesciunt, nulla atque corporis magni. Incidunt, facere rerum consequatur sit iste cupiditate voluptatum.
+                </p>
+            </Description>
         </div>
     )
 }

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+// Hero
+
 export const MyImageEl = styled.img`
     width: 28rem;
     height: 28rem;
@@ -32,4 +34,11 @@ export const Name = styled.p`
         font-size: 3em;
         line-height: 1.2;
     }
+`
+
+// Description
+
+export const Description = styled.div`
+    text-align: center;
+    padding: 2%;
 `
