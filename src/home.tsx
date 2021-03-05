@@ -22,9 +22,23 @@ function Hero() {
                     </motion.div>
                     <br/>
                     <br/>
+                    <motion.div initial="hidden" animate="visible" variants={{
+                        hidden: {
+                            opacity: 0,
+                            scale: .7
+                        },
+                        visible: {
+                            opacity: 1,
+                            scale: 1,
+                            transition: {
+                                duration: .2,
+                            }
+                        }
+                    }}>
                     <Name className="glitch" data-text="Hi, I'm Ujjwal">
                         Hi, I'm Ujjwal
                     </Name>
+                    </motion.div>
                 </ImgContainer>
             </div>
         </div>
