@@ -75,9 +75,13 @@ function Skills() {
                     <li className="has-text-success">Nodejs</li>
                     <li>OSINT</li>
                     <li className="has-text-primary">Reverse Engg</li>
+                    <li style={{color: 'yellow'}} >Firebase</li>
+
                 </Col>
             </SkillsContainer>
             <br/>
+             <button className="button is-primary text is-medium">Projects Page</button>
+             <br/>
             <br/>
         </div>
     )
