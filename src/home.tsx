@@ -1,6 +1,6 @@
 import React from 'react';
 import MyImage from './assets/me.jpg';
-import { MyImageEl, ImgContainer, Name, Description, Whoami, DesHeading } from './components/home';
+import { MyImageEl, ImgContainer, Name, Description, Whoami, DesHeading, SkillsContainer, Col } from './components/home';
 import { motion } from 'framer-motion';
 import './glitch.scss';
 
@@ -55,7 +55,31 @@ function Hero() {
 
 function Skills() {
     return (
-        <div className="skills">SKILLS</div>
+        <div style={{textAlign: 'center'}}>
+            <br/>
+            <DesHeading className="has-text-primary stiff">Skills</DesHeading>
+            <br/>
+            <SkillsContainer className="columns text">
+                <Col className="column">
+                    <li>JavaScript</li>
+                    <li>Golang</li>
+                    <li>Python</li>
+                    <li>Web Exploitation</li>
+                    <li>Designing</li>
+                    <li>C</li>
+                </Col>
+                <Col className="column">
+                    <li>Typescript</li>
+                    <li>React</li>
+                    <li>Angular</li>
+                    <li>Nodejs</li>
+                    <li>OSINT</li>
+                    <li>Reverse Engg</li>
+                </Col>
+            </SkillsContainer>
+            <br/>
+            <br/>
+        </div>
     )
 }
 

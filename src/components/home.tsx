@@ -63,3 +63,15 @@ export const DesHeading = styled.h1`
         font-size: 3.34em;
     }
 `
+
+// Skills
+export const SkillsContainer = styled.div`
+    width: 50%;
+    margin: auto;
+    padding: 4%;
+    background-color: rgba(0, 0, 0, .1);
+`
+
+export const Col = styled.div `
+    font-size: 1.7rem;
+`
