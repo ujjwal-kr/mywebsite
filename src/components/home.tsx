@@ -26,6 +26,13 @@ export const ImgContainer = styled.div`
     margin: auto;
 `
 
+export const ScrollImg = styled.img`
+    width: 10em;
+    height: 10em;
+    position: relative;
+    top: 6em;
+`
+
 export const Name = styled.p`
     margin-top: 1em;
     font-size: 3.5em;
