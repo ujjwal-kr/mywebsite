@@ -56,3 +56,10 @@ export const Whoami = styled.p`
         margin-top: .6em;
     }
 `
+
+export const DesHeading = styled.h1`
+    font-size: 4em;
+    @media all and (max-width: 800px) {
+        font-size: 3.34em;
+    }
+`

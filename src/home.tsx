@@ -1,6 +1,6 @@
 import React from 'react';
 import MyImage from './assets/me.jpg';
-import { MyImageEl, ImgContainer, Name, Description, Whoami } from './components/home';
+import { MyImageEl, ImgContainer, Name, Description, Whoami, DesHeading } from './components/home';
 import { motion } from 'framer-motion';
 import './glitch.scss';
 
@@ -44,7 +44,7 @@ function Hero() {
             </div>
 
             <Description>
-                <h1 style={{fontSize:'4em'}} className="has-text-primary stiff">whoami</h1>
+                <DesHeading className="has-text-primary stiff">whoami</DesHeading>
                 <Whoami className="text">
                     I'm a <a href="https://en.wikipedia.org/wiki/Web_developer">Web developer </a>and a  <a href="https://en.wikipedia.org/wiki/Hacker">Computer hacker</a>. I'm 16 years old and from India. I research about security, open source intelligence and <a href="https://en.wikipedia.org/wiki/Reverse_engineering">Reverse Engineering</a> apps, firmwares and malwares.
                 </Whoami>
