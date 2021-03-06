@@ -49,3 +49,10 @@ export const Description = styled.div`
     text-align: center;
     padding: 2%;
 `
+export const Whoami = styled.p`
+    font-size: 2em;
+    @media all and (max-width: 800px) {
+        font-size: 1.5em;
+        margin-top: .6em;
+    }
+`
