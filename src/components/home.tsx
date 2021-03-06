@@ -9,13 +9,13 @@ export const MyImageEl = styled.img`
     border: 5px solid #ff1c5c;
     margin-top: -5em;
     @media all and (max-width: 800px) {
-        width: 18rem;
-        height: 18rem;
+        width: 16rem;
+        height: 16rem;
     }
 
     @media all and (max-width: 350px) {
-        width: 15rem;
-        height: 15rem;
+        width: 13rem;
+        height: 13rem;
         margin-top: -3em;
     }
 `
@@ -66,12 +66,19 @@ export const DesHeading = styled.h1`
 
 // Skills
 export const SkillsContainer = styled.div`
-    width: 50%;
+    width: 60%;
     margin: auto;
     padding: 4%;
     background-color: rgba(0, 0, 0, .1);
+    @media all and (max-width: 800px) {
+        padding: 2%;
+        width: 80%;
+    }
 `
 
 export const Col = styled.div `
     font-size: 1.7rem;
+    @media all and (max-width: 800px) {
+        font-size: 1.1em;
+    }
 `

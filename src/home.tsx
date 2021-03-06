@@ -59,22 +59,22 @@ function Skills() {
             <br/>
             <DesHeading className="has-text-primary stiff">Skills</DesHeading>
             <br/>
-            <SkillsContainer className="columns text">
+            <SkillsContainer className="columns is-mobile text">
                 <Col className="column">
-                    <li>JavaScript</li>
-                    <li>Golang</li>
-                    <li>Python</li>
-                    <li>Web Exploitation</li>
+                    <li style={{color: 'yellow'}} >JavaScript</li>
+                    <li style={{color: '#00aeff'}}>Golang</li>
+                    <li style={{color: '#2994ff'}}>Python</li>
+                    <li>Web-Exploitation</li>
                     <li>Designing</li>
                     <li>C</li>
                 </Col>
                 <Col className="column">
                     <li>Typescript</li>
                     <li>React</li>
-                    <li>Angular</li>
-                    <li>Nodejs</li>
+                    <li style={{color: 'red'}}>Angular</li>
+                    <li className="has-text-success">Nodejs</li>
                     <li>OSINT</li>
-                    <li>Reverse Engg</li>
+                    <li className="has-text-primary">Reverse Engg</li>
                 </Col>
             </SkillsContainer>
             <br/>
