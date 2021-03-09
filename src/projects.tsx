@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useQuery } from 'urql';
 
 interface Data {
@@ -18,8 +18,10 @@ interface Data {
 interface Repo {
     name: String;
     description: String;
+    primaryLanguage :{
+        name: String;
+    }
 }
-
 function Projects() {
     const ProjectsQuery = `
     query($number_of_repos: Int!){
@@ -29,6 +31,9 @@ function Projects() {
                 nodes{
                     name
                     description
+                    primaryLanguage {
+                        name
+                    }
                 }
             }
         }
@@ -49,10 +54,25 @@ function Projects() {
     const data: Data = result.data;
     if (fetching) return <p>Loading...</p>;
     if (error) return <p>Oh no... {error.message}</p>;
+    console.log(data)
    return(
-       <div></div>
+       <div>
+           {data.viewer.repositories.nodes.map(repos => {
+               if (repos.primaryLanguage == null) {repos.primaryLanguage = {name: ""}}
+               console.log(repos.primaryLanguage.name)
+               return (<div>
+               </div>)
+           })}
+       </div>
    )
 }
+
+function randShade(): String {
+    const shades: String[] = ['primary', 'danger', 'success']
+    let rand = Math.floor(Math.random() * Math.floor(3))
+    return shades[rand]
+}
+
 
 
 export default Projects

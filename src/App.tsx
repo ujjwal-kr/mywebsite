@@ -10,7 +10,7 @@ function App() {
   const Client = createClient({
     url: 'https://api.github.com/graphql',
     fetchOptions: () => {
-        const token = '17d90f17a2b0faab006581629b9617166170d548';
+        const token = '890de511da1000cd4f0f37cba72a79df833b57f6';
         return {
             headers: {authorization: `bearer ${token}`}
         }
