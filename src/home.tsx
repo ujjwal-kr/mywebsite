@@ -3,7 +3,6 @@ import MyImage from './assets/me.jpg';
 import { MyImageEl, ImgContainer, Name, Description, Whoami, DesHeading, SkillsContainer, Col } from './components/home';
 import { motion } from 'framer-motion';
 import './glitch.scss';
-import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -78,10 +77,6 @@ function Skills() {
                     <li className="has-text-primary">Reverse Engg</li>
                 </Col>
             </SkillsContainer>
-            <br/>
-                <Link to="/projects">
-                    <button className="button is-primary text is-medium">Projects Page</button>
-                </Link>
              <br/>
             <br/>
         </div>
