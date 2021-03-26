@@ -2,7 +2,6 @@ import React from 'react';
 import './App.sass';
 import {Route, Switch} from 'react-router-dom';
 import Home from './home';
-import Projects from './projects';
 import ProjectId from './projectId';
 import { createClient, Provider } from 'urql';
 
@@ -20,8 +19,7 @@ function App() {
     <Provider value={Client}>
       <Switch>
         <Route path="/" component={Home} exact />
-        <Route path="/projects/:id" component={ProjectId}/>
-        <Route path="/projects" component={Projects} />
+
       </Switch>
     </Provider>
   );
