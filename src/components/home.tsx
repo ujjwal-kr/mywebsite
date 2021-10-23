@@ -3,8 +3,8 @@ import styled from 'styled-components';
 // Hero
 
 export const MyImageEl = styled.img`
-    width: 28rem;
-    height: 28rem;
+    width: 24rem;
+    height: 24rem;
     border-radius: 50%;
     border: 5px solid #ff1c5c;
     margin-top: -5em;

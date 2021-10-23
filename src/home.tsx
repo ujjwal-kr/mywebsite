@@ -14,6 +14,11 @@ function Home() {
 }
 
 function Hero() {
+    let age: number
+    const birthday: number = Date.parse('Thu Oct 7 2004 00:00:00 GMT+0530')
+    let time: number = Date.now()
+    let eclapsed = time - birthday
+    age = Math.floor(eclapsed / 1000 / 60 / 60 / 24 / 365)
     return (
         <div>
             <div className="hero is-info is-fullheight" style={{overflow: 'hidden'}}>
@@ -46,7 +51,7 @@ function Hero() {
             <Description>
                 <DesHeading className="has-text-primary stiff">whoami</DesHeading>
                 <Whoami className="text">
-                    I'm a <a href="https://en.wikipedia.org/wiki/Web_developer">Web developer </a>and a  <a href="https://en.wikipedia.org/wiki/Hacker">Computer hacker</a>. I'm 16 years old and from India. I research about security, open source intelligence and <a href="https://en.wikipedia.org/wiki/Reverse_engineering">Reverse Engineering</a> apps, firmwares and malwares.
+                    I'm a <a href="https://en.wikipedia.org/wiki/Web_developer">Web developer </a>and a  <a href="https://en.wikipedia.org/wiki/Hacker">Computer hacker</a>. I'm {age} years old and from India. I research about security, open source intelligence and <a href="https://en.wikipedia.org/wiki/Reverse_engineering">Reverse Engineering</a> apps, firmwares and malwares.
                 </Whoami>
             </Description>
         </div>
