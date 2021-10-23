@@ -21,13 +21,13 @@ function Hero() {
     age = Math.floor(eclapsed / 1000 / 60 / 60 / 24 / 365)
     return (
         <div>
-            <div className="hero is-info is-fullheight" style={{overflow: 'hidden'}}>
+            <div className="hero is-info is-fullheight" style={{ overflow: 'hidden' }}>
                 <ImgContainer>
-                    <motion.div animate={{scale: 1.1}}>
-                        <MyImageEl src={MyImage} />                    
+                    <motion.div animate={{ scale: 1.1 }}>
+                        <MyImageEl src={MyImage} />
                     </motion.div>
-                    <br/>
-                    <br/>
+                    <br />
+                    <br />
                     <motion.div initial="hidden" animate="visible" variants={{
                         hidden: {
                             opacity: 0,
@@ -41,9 +41,9 @@ function Hero() {
                             }
                         }
                     }}>
-                    <Name className="glitch" data-text="Hi, I'm Ujjwal">
-                        Hi, I'm Ujjwal
-                    </Name>
+                        <Name className="glitch" data-text="Hi, I'm Ujjwal">
+                            Hi, I'm Ujjwal
+                        </Name>
                     </motion.div>
                 </ImgContainer>
             </div>
@@ -51,7 +51,7 @@ function Hero() {
             <Description>
                 <DesHeading className="has-text-primary stiff">whoami</DesHeading>
                 <Whoami className="text">
-                    I'm a <a href="https://en.wikipedia.org/wiki/Web_developer">Web developer </a>and a  <a href="https://en.wikipedia.org/wiki/Hacker">Computer hacker</a>. I'm {age} years old and from India. I research about security, open source intelligence and <a href="https://en.wikipedia.org/wiki/Reverse_engineering">Reverse Engineering</a> apps, firmwares and malwares.
+                    Computer Programmer. I'm {age} years old and from India. I research about CS, <a href="https://en.wikipedia.org/wiki/Reverse_engineering">Reverse Engineering</a> apps, firmwares and malwares. Currently working on <a href = "https://github.com/hackarmour">HackArmour</a>, and some <a href="https://github.com/ujjwal-kr">epic projects.</a>
                 </Whoami>
             </Description>
         </div>
@@ -60,30 +60,30 @@ function Hero() {
 
 function Skills() {
     return (
-        <div style={{textAlign: 'center'}}>
-            <br/>
+        <div style={{ textAlign: 'center' }}>
+            <br />
             <DesHeading className="has-text-primary stiff">Skills</DesHeading>
-            <br/>
+            <br />
             <SkillsContainer className="columns is-mobile text">
                 <Col className="column">
-                    <li style={{color: 'yellow'}} >JavaScript</li>
-                    <li style={{color: '#00aeff'}}>Golang</li>
-                    <li style={{color: '#2994ff'}}>Python</li>
-                    <li>Web-Exploitation</li>
-                    <li>Designing</li>
+                    <li style={{ color: 'yellow' }} >JavaScript</li>
+                    <li style={{ color: '#00aeff' }}>Golang</li>
+                    <li style={{ color: '#2994ff' }}>Python</li>
+                    <li>UI/UX</li>
+                    <li>Malware Analysis</li>
                     <li>C</li>
                 </Col>
                 <Col className="column">
                     <li>Typescript</li>
                     <li>React</li>
-                    <li style={{color: 'red'}}>Angular</li>
+                    <li style={{ color: 'red' }}>Angular</li>
                     <li className="has-text-success">Nodejs</li>
                     <li>OSINT</li>
                     <li className="has-text-primary">Reverse Engg</li>
                 </Col>
             </SkillsContainer>
-             <br/>
-            <br/>
+            <br />
+            <br />
         </div>
     )
 }

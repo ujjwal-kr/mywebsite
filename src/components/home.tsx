@@ -50,9 +50,9 @@ export const Description = styled.div`
     padding: 2%;
 `
 export const Whoami = styled.p`
-    font-size: 2em;
+    font-size: 1.8em;
     @media all and (max-width: 800px) {
-        font-size: 1.5em;
+        font-size: 1.2em;
         margin-top: .6em;
     }
 `
