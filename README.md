@@ -1,3 +1,3 @@
 # My Website
 
-My website with reactjs lol
+My website with reactjs and typescript hahahaahahahaha lol
