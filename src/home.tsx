@@ -10,6 +10,7 @@ function Home() {
         <div>
             <Hero />
             <Skills />
+            <Blog />
             <FooterComponent />
         </div>
     )
@@ -53,7 +54,7 @@ function Hero() {
             <Description>
                 <DesHeading className="has-text-primary stiff">whoami</DesHeading>
                 <Whoami className="text">
-                    Computer Programmer. I'm {age} years old and from India. I research about CS, <a href="https://en.wikipedia.org/wiki/Reverse_engineering">Reverse Engineering</a> apps, firmwares and malwares. Currently working on <a href = "https://github.com/hackarmour">HackArmour</a>, and some <a href="https://github.com/ujjwal-kr">epic projects.</a>
+                    Computer Programmer. I'm {age} years old and from India. I research about CS, <a href="https://en.wikipedia.org/wiki/Reverse_engineering">Reverse Engineering</a> apps, firmwares and malwares. Currently working on <a href="https://github.com/hackarmour">HackArmour</a>, and some <Link to="/projects"> <a>epic projects.</a> </Link>
                 </Whoami>
             </Description>
         </div>
@@ -72,7 +73,7 @@ function Skills() {
                     <li style={{ color: '#00aeff' }}>Golang</li>
                     <li style={{ color: '#2994ff' }}>Python</li>
                     <li>UI/UX</li>
-                    <li>Malware Analysis</li>
+                    <li>Electronics</li>
                     <li>C</li>
                 </Col>
                 <Col className="column">
@@ -81,14 +82,29 @@ function Skills() {
                     <li style={{ color: 'red' }}>Angular</li>
                     <li className="has-text-success">Nodejs</li>
                     <li>OSINT</li>
-                    <li className="has-text-primary">Reverse Engg</li>
+                    <li className="has-text-primary">Reversing</li>
                 </Col>
             </SkillsContainer>
             <br />
             <br />
             <Link to="/projects">
-                <button className="text button is-primary is-medium">Projects</button>
+                <button className="text button is-primary is-medium">My Projects</button>
             </Link>
+        </div>
+    )
+}
+
+function Blog() {
+    return (
+        <div style={{ textAlign: 'center' }}>
+            <br />
+            <Description>
+                <DesHeading className="has-text-primary stiff">Publishments</DesHeading>
+                <br />
+                <Whoami className="text">
+                    Writing is my hobby. But spending more time into it is what I want to accomplish. I have written a bit on <a href="https://ujjwalkr.medium.com/">My Meduim Page</a> and also starting a <a href="https://github.com/kekwlabs/kek-blogs">blogging platform</a> for more technical writing and publising stuff from and for the community.
+                </Whoami>
+            </Description>
         </div>
     )
 }
