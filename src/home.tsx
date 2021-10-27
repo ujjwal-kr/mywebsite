@@ -54,7 +54,7 @@ function Hero() {
             <Description>
                 <DesHeading className="has-text-primary stiff">whoami</DesHeading>
                 <Whoami className="text">
-                    Computer Programmer. I'm {age} years old and from India. I research about CS, <a href="https://en.wikipedia.org/wiki/Reverse_engineering">Reverse Engineering</a> apps, firmwares and malwares. Currently working on <a href="https://github.com/hackarmour">HackArmour</a>, and some <Link to="/projects"> <a>epic projects.</a> </Link>
+                    Computer Programmer. I'm {age} years old and from India. I research about CS, <a href="https://en.wikipedia.org/wiki/Reverse_engineering">Reverse Engineering</a> apps, firmwares and malwares. Currently working on <a href="https://github.com/hackarmour">HackArmour</a>, and some <Link to="/projects">epic projects.</Link>
                 </Whoami>
             </Description>
         </div>
