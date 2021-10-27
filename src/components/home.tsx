@@ -6,7 +6,7 @@ export const MyImageEl = styled.img`
     width: 24rem;
     height: 24rem;
     border-radius: 50%;
-    border: 5px solid #ff1c5c;
+    border: 4px solid #ff1c5c;
     margin-top: -5em;
     @media all and (max-width: 800px) {
         width: 16rem;
