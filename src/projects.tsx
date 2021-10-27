@@ -36,7 +36,7 @@ class Projects extends React.Component<any, State> {
     render() {
         return (
             <div>
-                <motion.div initial = "hidden" animate="visible" variants={this.state.startAnimation}>
+                <motion.div initial="hidden" animate="visible" variants={this.state.startAnimation}>
                     <Header className="has-text-centered">
                         <h1 className="has-text-primary stiff is-size-1	">ProJEcts</h1>
                     </Header>
@@ -56,11 +56,10 @@ class Projects extends React.Component<any, State> {
                                             </a></ProjectHead> :
                                             <ProjectHead className="text is-size-3">{item.title}</ProjectHead>}
                                         <ProjectDec className="text is-size-5">{item.body}</ProjectDec>
-                                        {item.live ?
-                                            <div>
-                                                <br />
-                                                <a href={item.live} className="button is-primary">Live Demo</a>
-                                            </div> : null}
+                                        <div>
+                                            <br />
+                                            <a href={item.live?.url} className="button is-primary">{item.live?.text}</a>
+                                        </div>
                                         <br />
                                     </Project>
                                 })
