@@ -10,6 +10,7 @@ function Home() {
         <div>
             <Hero />
             <Skills />
+            <Projects />
             <Blog />
             <FooterComponent />
         </div>
@@ -86,10 +87,25 @@ function Skills() {
                 </Col>
             </SkillsContainer>
             <br />
+        </div>
+    )
+}
+
+function Projects() {
+    return (
+        <div style={{ textAlign: 'center' }}>
             <br />
-            <Link to="/projects">
-                <button className="text button is-primary is-medium">My Projects</button>
-            </Link>
+            <Description>
+                <DesHeading className="has-text-primary stiff">ProJEcts</DesHeading>
+                <br />
+                <Whoami className="text">
+                    I'm mostly a student, and most of the time is spent on academics. I try to make whatever comes in my mind in my spare time using the technologies I know and try to learn them by making projects.
+                </Whoami>
+                <br />
+                <Link to="/projects">
+                    <button className="text button is-primary is-medium">My Projects</button>
+                </Link>
+            </Description>
         </div>
     )
 }
@@ -98,9 +114,9 @@ function Blog() {
     return (
         <div style={{ textAlign: 'center' }}>
             <br />
+            <br />
             <Description>
                 <DesHeading className="has-text-primary stiff">Publishments</DesHeading>
-                <br />
                 <Whoami className="text">
                     Writing is my hobby. But spending more time into it is what I want to accomplish. I have written a bit on <a href="https://ujjwalkr.medium.com/">My Meduim Page</a> and also starting a <a href="https://github.com/kekwlabs/kek-blogs">blogging platform</a> for more technical writing and publising stuff from and for the community.
                 </Whoami>

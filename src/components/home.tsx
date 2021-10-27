@@ -48,6 +48,12 @@ export const Name = styled.p`
 export const Description = styled.div`
     text-align: center;
     padding: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    @media all and (max-width: 750px){
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 `
 export const Whoami = styled.p`
     font-size: 1.5em;
@@ -60,15 +66,19 @@ export const Whoami = styled.p`
 export const DesHeading = styled.h1`
     font-size: 3.42em;
     @media all and (max-width: 800px) {
-        font-size: 3.34em;
+        font-size: 3.17em;
+    }
+
+    @media all and (max-width: 350px) {
+        font-size: 2em;
     }
 `
 
 // Skills
 export const SkillsContainer = styled.div`
-    width: 60%;
+    width: 55%;
     margin: auto;
-    padding: 4%;
+    padding: 3%;
     background-color: rgba(0, 0, 0, .1);
     @media all and (max-width: 800px) {
         padding: 2%;
@@ -79,7 +89,7 @@ export const SkillsContainer = styled.div`
 export const Col = styled.div `
     font-size: 1.5rem;
     @media all and (max-width: 800px) {
-        font-size: 1.1em;
+        font-size: 1.24em;
     }
 `
 
