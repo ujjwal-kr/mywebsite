@@ -35,7 +35,7 @@ export const ScrollImg = styled.img`
 
 export const Name = styled.p`
     margin-top: 1em;
-    font-size: 3.5em;
+    font-size: 3.2em;
     @media all and (max-width: 800px) {
         margin-top: .7em;
         font-size: 3em;
@@ -50,7 +50,7 @@ export const Description = styled.div`
     padding: 2%;
 `
 export const Whoami = styled.p`
-    font-size: 1.8em;
+    font-size: 1.5em;
     @media all and (max-width: 800px) {
         font-size: 1.2em;
         margin-top: .6em;
@@ -58,7 +58,7 @@ export const Whoami = styled.p`
 `
 
 export const DesHeading = styled.h1`
-    font-size: 4em;
+    font-size: 3.42em;
     @media all and (max-width: 800px) {
         font-size: 3.34em;
     }
@@ -77,7 +77,7 @@ export const SkillsContainer = styled.div`
 `
 
 export const Col = styled.div `
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     @media all and (max-width: 800px) {
         font-size: 1.1em;
     }
