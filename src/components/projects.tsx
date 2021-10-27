@@ -28,7 +28,12 @@ export const Project = styled.div`
 
 export const ProjectList = styled.div`
     padding-top: 2rem;
-
+    padding-left: 5rem;
+    padding-right: 5rem;
+    @media all and (max-width: 800px){
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
 `
 
 
