@@ -9,6 +9,7 @@ function ScrollToTop({ history }: any) {
     return () => {
       unlisten();
     }
+// eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (null);
