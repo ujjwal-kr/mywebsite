@@ -36,7 +36,7 @@ class Projects extends React.Component<any, State> {
                     this.state.projects.map((item, i) => {
                         return <Project key={i}>
                                 {item.source ?
-                                    <ProjectHead><a className="text is-size-3" href={item.source}>{item.title}</a></ProjectHead>
+                                    <ProjectHead><a className="text is-size-3" href={item.source}><u>{item.title}</u></a></ProjectHead>
                                 :
                                     <ProjectHead className="text is-size-3">{item.title}</ProjectHead>
                                 }
