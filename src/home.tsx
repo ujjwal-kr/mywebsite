@@ -4,6 +4,7 @@ import { MyImageEl, ImgContainer, Name, Description, Whoami, DesHeading, SkillsC
 import { motion } from 'framer-motion';
 import './glitch.scss';
 import FooterComponent from './footer';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -86,6 +87,9 @@ function Skills() {
             </SkillsContainer>
             <br />
             <br />
+            <Link to="/projects">
+                <button className="button is-primary is-medium">Projects</button>
+            </Link>
         </div>
     )
 }
