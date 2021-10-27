@@ -5,14 +5,25 @@ import { motion } from 'framer-motion'
 import FooterComponent from "./footer"
 
 interface State {
-    projects?: IProject[]
+    projects?: IProject[],
+    startAnimation: any
 }
 
 class Projects extends React.Component<any, State> {
     constructor(props: any) {
         super(props)
         this.state = {
-            projects: []
+            projects: [],
+            startAnimation: {
+                hidden: {
+                    opacity: 0,
+                    translateY: 100 + 'px'
+                },
+                visible: {
+                    opacity: 1,
+                    translateY: 0 + 'px'
+                }
+            }
         }
     }
 
@@ -25,21 +36,13 @@ class Projects extends React.Component<any, State> {
     render() {
         return (
             <div>
-                <Header className="has-text-centered">
-                    <h1 className="has-text-primary stiff is-size-1	">ProJEcts</h1>
-                </Header>
+                <motion.div initial = "hidden" animate="visible" variants={this.state.startAnimation}>
+                    <Header className="has-text-centered">
+                        <h1 className="has-text-primary stiff is-size-1	">ProJEcts</h1>
+                    </Header>
+                </motion.div>
                 <Showcase>
-                    <motion.div initial="hidden" animate="visible" variants={{
-                        hidden: {
-                            opacity: 0,
-                            translateY: 100 + 'px'
-                        },
-
-                        visible: {
-                            opacity: 1,
-                            translateY: 0 + 'px'
-                        }
-                    }}>
+                    <motion.div initial="hidden" animate="visible" variants={this.state.startAnimation}>
                         <ShowcasePara className="text is-size-4">
                             Welcome to my projects page. I make lot of stuff in my freetime and a most of it could be found on <a href="https://github.com/ujjwal-kr">my GitHub</a>. Here are some of the notable ones:
                         </ShowcasePara>
