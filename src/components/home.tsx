@@ -92,10 +92,3 @@ export const Col = styled.div `
         font-size: 1.24em;
     }
 `
-
-export const Footer = styled.div`
-    padding: 1.2rem;
-    margin: auto;
-    text-align: center;
-    font-size: 1.3rem;
-`
