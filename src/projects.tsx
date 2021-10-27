@@ -53,9 +53,11 @@ class Projects extends React.Component<any, State> {
                                             </a></ProjectHead> :
                                             <ProjectHead className="text is-size-3">{item.title}</ProjectHead>}
                                         <ProjectDec className="text is-size-5">{item.body}</ProjectDec>
-                                        <br />
                                         {item.live ?
-                                            <a href={item.live} className="button is-primary">Live Demo</a> : null}
+                                            <div>
+                                                <br />
+                                                <a href={item.live} className="button is-primary">Live Demo</a>
+                                            </div> : null}
                                         <br />
                                     </Project>
                                 })
