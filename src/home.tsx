@@ -1,14 +1,16 @@
 import React from 'react';
 import MyImage from './assets/myself.png';
-import { MyImageEl, ImgContainer, Name, Description, Whoami, DesHeading, SkillsContainer, Col } from './components/home';
+import { MyImageEl, ImgContainer, Name, Description, Whoami, DesHeading, SkillsContainer, Col, Footer } from './components/home';
 import { motion } from 'framer-motion';
 import './glitch.scss';
+import FooterComponent from './footer';
 
 function Home() {
     return (
         <div>
             <Hero />
             <Skills />
+            <FooterComponent />
         </div>
     )
 }
@@ -89,6 +91,4 @@ function Skills() {
 }
 
 
-
-
-export default Home;
+export default Home

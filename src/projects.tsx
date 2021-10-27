@@ -2,6 +2,7 @@ import { IProject, projectData } from "./data"
 import { Header, Showcase, ShowcasePara, ProjectList, ProjectHead, ProjectDec, Project } from "./components/projects"
 import React from "react"
 import { motion } from 'framer-motion'
+import FooterComponent from "./footer"
 
 interface State {
     projects?: IProject[]
@@ -64,6 +65,7 @@ class Projects extends React.Component<any, State> {
                         </ProjectList>
                     </motion.div>
                 </Showcase>
+                <FooterComponent />
             </div>
         )
     }
