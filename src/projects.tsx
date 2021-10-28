@@ -16,11 +16,9 @@ class Projects extends React.Component<any, State> {
             projects: [],
             startAnimation: {
                 hidden: {
-                    opacity: 0,
                     translateY: 100 + 'px'
                 },
                 visible: {
-                    opacity: 1,
                     translateY: 0 + 'px'
                 }
             }
@@ -39,7 +37,7 @@ class Projects extends React.Component<any, State> {
             <div>
                 <motion.div initial="hidden" animate="visible"
                     variants={this.state.startAnimation}
-                    transition={{ duration: 0.12 }}
+                    transition={{ duration: 0.2 }}
                 >
                     <Header className="has-text-centered">
                         <h1 className="has-text-primary stiff is-size-1	">ProJEcts</h1>

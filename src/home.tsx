@@ -9,9 +9,11 @@ function Home() {
     return (
         <div>
             <motion.main
-                initial={{ translateY: -100 + 'px' }}
-                animate={{ translateY: 0 + 'px' }}
-                transition={{ duration: .12 }}>
+                initial={{opacity: 0, translateY: -100 + 'px' }}
+                animate={{ translateY: 0 + 'px', opacity: 1 }}
+                transition={{ duration: .2 }}
+                exit={{opacity: 0}}
+                >
                 <Hero />
                 <Skills />
                 <Projects />
