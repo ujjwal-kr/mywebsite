@@ -3,14 +3,14 @@ import styled from 'styled-components';
 // Hero
 
 export const MyImageEl = styled.img`
-    width: 24rem;
-    height: 24rem;
+    width: 25rem;
+    height: 25rem;
     border-radius: 50%;
     border: 4px solid #ff1c5c;
     margin-top: -5em;
     @media all and (max-width: 800px) {
-        width: 16rem;
-        height: 16rem;
+        width: 17rem;
+        height: 17rem;
     }
 
     @media all and (max-width: 350px) {
