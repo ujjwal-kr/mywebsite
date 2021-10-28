@@ -8,10 +8,10 @@ import { Link } from 'react-router-dom';
 function Home() {
     return (
         <div>
-            <motion.main 
-            initial={{ opacity: 0, translateY: -100 + 'px' }} 
-            animate = {{opacity: 1, translateY: 0 + 'px'}}
-            transition={{duration: .12}}>
+            <motion.main
+                initial={{ translateY: -100 + 'px' }}
+                animate={{ translateY: 0 + 'px' }}
+                transition={{ duration: .12 }}>
                 <Hero />
                 <Skills />
                 <Projects />
@@ -28,33 +28,17 @@ function Hero() {
     let time: number = Date.now()
     let eclapsed = time - birthday
     age = Math.floor(eclapsed / 1000 / 60 / 60 / 24 / 365)
-    
+
     return (
         <div>
             <div className="hero is-info is-fullheight" style={{ overflow: 'hidden' }}>
                 <ImgContainer>
-                    <motion.div animate={{ scale: 1.1 }}>
-                        <MyImageEl src={MyImage} />
-                    </motion.div>
+                    <MyImageEl src={MyImage} />
                     <br />
                     <br />
-                    <motion.div initial="hidden" animate="visible" variants={{
-                        hidden: {
-                            opacity: 0,
-                            scale: .7
-                        },
-                        visible: {
-                            opacity: 1,
-                            scale: 1,
-                            transition: {
-                                duration: .2,
-                            }
-                        }
-                    }}>
-                        <Name className="glitch" data-text="Hi, I'm Ujjwal">
-                            Hi, I'm Ujjwal
-                        </Name>
-                    </motion.div>
+                    <Name className="glitch" data-text="Hi, I'm Ujjwal">
+                        Hi, I'm Ujjwal
+                    </Name>
                 </ImgContainer>
             </div>
 
