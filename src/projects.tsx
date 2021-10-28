@@ -37,7 +37,7 @@ class Projects extends React.Component<any, State> {
             <div>
                 <motion.div initial="hidden" animate="visible"
                     variants={this.state.startAnimation}
-                    transition={{ duration: 0.2 }}
+                    transition={{ duration: 0.135, ease:'easeOut' }}
                 >
                     <Header className="has-text-centered">
                         <h1 className="has-text-primary stiff is-size-1	">ProJEcts</h1>
@@ -58,7 +58,7 @@ class Projects extends React.Component<any, State> {
                                         <ProjectDec className="text is-size-5">{item.body}</ProjectDec>
                                         <div>
                                             <br />
-                                            <a href={item.live?.url} className="button is-primary">{item.live?.text}</a>
+                                            <a href={item.live?.url} className="button is-primary text">{item.live?.text}</a>
                                         </div>
                                         <br />
                                     </Project>

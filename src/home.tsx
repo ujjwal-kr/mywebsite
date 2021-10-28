@@ -11,7 +11,7 @@ function Home() {
             <motion.main
                 initial={{opacity: 0, translateY: -100 + 'px' }}
                 animate={{ translateY: 0 + 'px', opacity: 1 }}
-                transition={{ duration: .2 }}
+                transition={{ duration: .135,  ease:'easeOut' }}
                 exit={{opacity: 0}}
                 >
                 <Hero />
