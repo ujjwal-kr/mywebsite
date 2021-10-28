@@ -8,11 +8,16 @@ import { Link } from 'react-router-dom';
 function Home() {
     return (
         <div>
-            <Hero />
-            <Skills />
-            <Projects />
-            <Blog />
-            <FooterComponent />
+            <motion.main 
+            initial={{ opacity: 0, translateY: -100 + 'px' }} 
+            animate = {{opacity: 1, translateY: 0 + 'px'}}
+            transition={{duration: .12}}>
+                <Hero />
+                <Skills />
+                <Projects />
+                <Blog />
+                <FooterComponent />
+            </motion.main>
         </div>
     )
 }
@@ -23,6 +28,7 @@ function Hero() {
     let time: number = Date.now()
     let eclapsed = time - birthday
     age = Math.floor(eclapsed / 1000 / 60 / 60 / 24 / 365)
+    
     return (
         <div>
             <div className="hero is-info is-fullheight" style={{ overflow: 'hidden' }}>

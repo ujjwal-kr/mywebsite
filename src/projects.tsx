@@ -28,6 +28,7 @@ class Projects extends React.Component<any, State> {
     }
 
     componentDidMount() {
+        document.documentElement.scrollTop = 0
         this.setState({
             projects: projectData
         })
@@ -36,15 +37,16 @@ class Projects extends React.Component<any, State> {
     render() {
         return (
             <div>
-                <motion.div initial="hidden" animate="visible" variants={this.state.startAnimation}>
+                <motion.div initial="hidden" animate="visible"
+                    variants={this.state.startAnimation}
+                    transition={{ duration: 0.12 }}
+                >
                     <Header className="has-text-centered">
                         <h1 className="has-text-primary stiff is-size-1	">ProJEcts</h1>
                     </Header>
-                </motion.div>
-                <Showcase>
-                    <motion.div initial="hidden" animate="visible" variants={this.state.startAnimation}>
+                    <Showcase>
                         <ShowcasePara className="text is-size-4">
-                            Welcome to my projects page. I make lot of stuff in my freetime and a most of it could be found on <a href="https://github.com/ujjwal-kr">my GitHub</a>. Here are some of the notable ones:
+                            Welcome to my projects page.I make lot of stuff in my freetime and a most of it could be found on <a href="https://github.com/ujjwal-kr">my GitHub</a>.Here are some of the notable ones:
                         </ShowcasePara>
                         <ProjectList>
                             {this.state.projects ?
@@ -67,9 +69,9 @@ class Projects extends React.Component<any, State> {
                                 "Something went wrong"
                             }
                         </ProjectList>
-                    </motion.div>
-                </Showcase>
-                <FooterComponent />
+                    </Showcase>
+                    <FooterComponent />
+                </motion.div>
             </div>
         )
     }
