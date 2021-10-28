@@ -1,3 +1,11 @@
 # My Website
 
-My website with reactjs and typescript hahahaahahahaha lol
+My personal website with reactjs and typescript.
+
+## Stuff Used
+- ReactJS
+- TypeScript
+- Sass
+- styled-components
+- framer-motion
+- Bulma Css
