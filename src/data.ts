@@ -2,12 +2,12 @@ export interface IProject {
     title: string
     body: string
     source?: string
-    live: Live
+    live?: Live
 }
 
 interface Live {
-    text: string
-    url: string
+    text?: string
+    url?: string
 }
 
 export const projectData: IProject[] = [
