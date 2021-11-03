@@ -33,6 +33,7 @@ export const projectData: IProject[] = [
         title: 'Betcoin',
         source: 'https://github.com/ujjwal-kr/betcoin',
         body: 'A digital currency system created with python with features of a centralized bank, wallet system, and open transaction history of all users in the network.',
+        live: {text: 'Visit', url: ""
     },
     {
         title: 'Marvel Characters',
