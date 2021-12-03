@@ -48,15 +48,15 @@ export const Name = styled.p`
 export const Description = styled.div`
     text-align: center;
     padding: 2%;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-left: 6%;
+    padding-right: 6%;
     @media all and (max-width: 750px){
         padding-left: 2%;
         padding-right: 2%;
     }
 `
 export const Whoami = styled.p`
-    font-size: 1.5em;
+    font-size: 1.7em;
     @media all and (max-width: 800px) {
         font-size: 1.2em;
         margin-top: .6em;
