@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Header = styled.div`
     padding: .9rem;
-    background-color: rgba(0,0,0, .3)
+    background-color: rgba(0,0,0, .3);
 `
 
 export const Showcase = styled.section`
@@ -17,6 +17,7 @@ export const Showcase = styled.section`
 `
 
 export const ShowcasePara = styled.p`
+    font-size: 1.6rem !important;
     @media all and (max-width: 700px){
         font-size: 1.1rem !important;
     }
@@ -43,6 +44,7 @@ export const ProjectHead = styled.h1`
 
 export const ProjectDec = styled.p`
     padding-top: .5rem;
+    font-size: 1.5rem !important;
     @media all and (max-width: 700px) {
         font-size: 1.1rem !important;
     }
