@@ -66,7 +66,7 @@ function Skills() {
                     <li style={{ color: '#00aeff' }}>Golang</li>
                     <li>C++</li>
                     <li style={{ color: '#2994ff' }}>Python</li>
-                    <li>UI/UX</li>
+                    <li>Rust</li>
                     <li>Electronics</li>
                 </Col>
                 <Col className="column">
