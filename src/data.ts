@@ -26,7 +26,7 @@ export const projectData: IProject[] = [
     {
         title: 'Ram',
         source: 'https://github.com/ujjwal-kr/ram',
-        body: 'I made my first programming language (stack based) using Rust. Can perform basic math and conditional jumps. Will be improving it to use some variable abstractions.'
+        body: 'I made my first programming language (stack based) using Rust. Can perform basic math and conditional jumps. Will be improving it to use some variable abstractions.',
         live: {text: 'Source', url :"https://github.com/ujjwal-kr/ram"}
     },
     {
