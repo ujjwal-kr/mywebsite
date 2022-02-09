@@ -1,9 +1,9 @@
-import MyImage from './assets/myself.png';
-import { MyImageEl, ImgContainer, Name, Description, Whoami, DesHeading, SkillsContainer, Col } from './components/home';
-import { motion } from 'framer-motion';
-import './glitch.scss';
-import FooterComponent from './footer';
-import { Link } from 'react-router-dom';
+import MyImage from './assets/myself.png'
+import { MyImageEl, ImgContainer, Name, Description, Whoami, DesHeading, SkillsContainer, Col } from './components/home'
+import { motion } from 'framer-motion'
+import './glitch.scss'
+import FooterComponent from './footer'
+import { Link } from 'react-router-dom'
 
 function Home() {
     return (
@@ -48,7 +48,7 @@ function Hero() {
             <Description>
                 <DesHeading className="has-text-primary stiff">whoami</DesHeading>
                 <Whoami className="text">
-                    Computer Programmer. I'm {age} years old and from India. I research about CS, <a href="https://en.wikipedia.org/wiki/Reverse_engineering">Reverse Engineering</a> apps, firmwares and malwares. Currently working on <a href="https://github.com/hackarmour">HackArmour</a>, and some <Link to="/projects">epic projects.</Link>
+                    I'm a Computer Programmer. I'm {age} years old and from India. I research about CS, <a href="https://en.wikipedia.org/wiki/Reverse_engineering">Reverse Engineering</a> apps, firmwares and malwares. Currently working on <a href="https://github.com/hackarmour">HackArmour</a>, and some <Link to="/projects">epic projects.</Link>
                 </Whoami>
             </Description>
         </div>
@@ -126,7 +126,7 @@ function Ventures() {
             <Description>
                 <DesHeading className="has-text-primary stiff">Future Ventures</DesHeading>
                 <Whoami className="text">
-                    Here is the list of what I want to learn in the upcoming years, and I have also setup a <a href="https://github.com/ujjwal-kr/system-programming-roadmap">3 year long roadmap</a> for myself to learn some of the below mentioned things.
+                    Here is the list of what I want to learn in the upcoming years, and also have setup a <a href="https://github.com/ujjwal-kr/system-programming-roadmap">3 year long roadmap</a> for myself to learn some of the below mentioned things.
                     <br />
                     <br />
                     <ul>
