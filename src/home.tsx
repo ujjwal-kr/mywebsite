@@ -9,15 +9,16 @@ function Home() {
     return (
         <div>
             <motion.main
-                initial={{opacity: 0, translateY: -100 + 'px' }}
+                initial={{ opacity: 0, translateY: -100 + 'px' }}
                 animate={{ translateY: 0 + 'px', opacity: 1 }}
-                transition={{ duration: .135,  ease:'easeOut' }}
-                exit={{opacity: 0}}
-                >
+                transition={{ duration: .135, ease: 'easeOut' }}
+                exit={{ opacity: 0 }}
+            >
                 <Hero />
                 <Skills />
                 <Projects />
                 <Blog />
+                <Ventures />
                 <FooterComponent />
             </motion.main>
         </div>
@@ -110,7 +111,41 @@ function Blog() {
             <Description>
                 <DesHeading className="has-text-primary stiff">Publishments</DesHeading>
                 <Whoami className="text">
-                    Writing is my hobby. But spending more time into it is what I want to accomplish. I have written a bit on <a href="https://ujjwalkr.medium.com/">My Meduim Page</a> and also starting a <a href="https://github.com/kekwlabs/kek-blogs">blogging platform</a> for more technical writing and publising stuff from and for the community.
+                    Writing is one of my hobby. But spending more time into it is what I want to accomplish. I have written a bit on <a href="https://ujjwalkr.medium.com/">My Meduim Page</a> and also starting a <a href="https://github.com/kekwlabs/kek-blogs">blogging platform</a> for more technical writing and publising stuff from and for the community.
+                </Whoami>
+            </Description>
+        </div>
+    )
+}
+
+function Ventures() {
+    return (
+        <div style={{ textAlign: 'center' }}>
+            <br />
+            <br />
+            <Description>
+                <DesHeading className="has-text-primary stiff">Future Ventures</DesHeading>
+                <Whoami className="text">
+                    Here is the list of what I want to learn in the upcoming years, and I have also setup a <a href="https://github.com/ujjwal-kr/system-programming-roadmap">3 year long roadmap</a> for myself to learn some of the below mentioned things.
+                    <br />
+                    <br />
+                    <ul>
+                        <li>
+                            - Graphics Programming
+                        </li>
+                        <li>
+                            - Malware Analysis
+                        </li>
+                        <li>
+                            - Compiler Development
+                        </li>
+                        <li>
+                            - Browser Exploitation
+                        </li>
+                        <li>
+                            - Blockchain and P2P
+                        </li>
+                    </ul>
                 </Whoami>
             </Description>
         </div>
