@@ -124,7 +124,7 @@ function Ventures() {
             <br />
             <br />
             <Description>
-                <DesHeading className="has-text-primary stiff">Future Ventures</DesHeading>
+                <DesHeading className="has-text-primary stiff">Ventures</DesHeading>
                 <Whoami className="text">
                     Here is the list of what I want to learn in the upcoming years, and also have setup a <a href="https://github.com/ujjwal-kr/system-programming-roadmap">3 year long roadmap</a> for myself to learn some of the below mentioned things.
                     <br />
