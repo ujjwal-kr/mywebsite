@@ -37,18 +37,6 @@ export const ProjectList = styled.div`
     }
 `
 
-
-export const ProjectHead = styled.h1`
-    
-`
-
-export const ProjectImg = styled.img`
-    width: 50%;
-    @media all and (max-width: 700px) {
-        width: 70%;
-    }
-`
-
 export const ProjectDec = styled.p`
     padding-top: .5rem;
     font-size: 1.5rem !important;

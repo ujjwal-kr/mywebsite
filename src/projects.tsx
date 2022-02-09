@@ -1,5 +1,5 @@
 import { IProject, projectData } from "./data"
-import { Header, Showcase, ShowcasePara, ProjectList, ProjectHead, ProjectDec, Project, ProjectImg } from "./components/projects"
+import { Header, Showcase, ShowcasePara, ProjectList, ProjectDec, Project } from "./components/projects"
 import React from "react"
 import { motion } from 'framer-motion'
 import FooterComponent from "./footer"
@@ -51,17 +51,19 @@ class Projects extends React.Component<any, State> {
                                 this.state.projects.map((item: IProject, i: number) => {
                                     return <Project key={i}>
                                         {item.source ?
-                                            <ProjectHead><a className="text is-size-3" href={item.source}>
+                                            <h1><a className="text is-size-3" href={item.source}>
                                                 <u>{item.title}</u>
-                                            </a></ProjectHead> :
-                                            <ProjectHead className="text is-size-3">{item.title}</ProjectHead>}
+                                            </a></h1> :
+                                            <h1 className="text is-size-3">{item.title}</h1>}
                                         <div className="columns">
                                             <div className="column">
                                                 <ProjectDec className="text is-size-5">{item.body}</ProjectDec>
                                                 <br />
                                                 <a href={item.live?.url} className="button is-primary text">{item.live?.text}</a>
                                             </div>
-                                            <ProjectImg className="column" src={item.img} alt="project" />
+                                            <div className="column">
+                                                <img src={item.img} alt="project" />
+                                            </div>
                                         </div>
                                         <br />
                                     </Project>
