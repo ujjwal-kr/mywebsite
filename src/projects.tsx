@@ -1,5 +1,5 @@
 import { IProject, projectData } from "./data"
-import { Header, Showcase, ShowcasePara, ProjectList, ProjectHead, ProjectDec, Project } from "./components/projects"
+import { Header, Showcase, ShowcasePara, ProjectList, ProjectHead, ProjectDec, Project, ProjectImg } from "./components/projects"
 import React from "react"
 import { motion } from 'framer-motion'
 import FooterComponent from "./footer"
@@ -37,14 +37,14 @@ class Projects extends React.Component<any, State> {
             <div>
                 <motion.div initial="hidden" animate="visible"
                     variants={this.state.startAnimation}
-                    transition={{ duration: 0.135, ease:'easeOut' }}
+                    transition={{ duration: 0.135, ease: 'easeOut' }}
                 >
                     <Header className="has-text-centered">
                         <h1 className="has-text-primary stiff is-size-1	">ProJEcts</h1>
                     </Header>
                     <Showcase>
                         <ShowcasePara className="text is-size-4">
-                            Welcome to my projects page.I make lot of stuff in my freetime and a most of it could be found on <a href="https://github.com/ujjwal-kr">my GitHub</a>. Here are some of the notable ones:
+                            Welcome to my projects page. I make lot of stuff in my freetime and a most of it could be found on <a href="https://github.com/ujjwal-kr">my GitHub</a>. Here are some of the notable ones:
                         </ShowcasePara>
                         <ProjectList>
                             {this.state.projects ?
@@ -55,10 +55,13 @@ class Projects extends React.Component<any, State> {
                                                 <u>{item.title}</u>
                                             </a></ProjectHead> :
                                             <ProjectHead className="text is-size-3">{item.title}</ProjectHead>}
-                                        <ProjectDec className="text is-size-5">{item.body}</ProjectDec>
-                                        <div>
-                                            <br />
-                                            <a href={item.live?.url} className="button is-primary text">{item.live?.text}</a>
+                                        <div className="columns">
+                                            <div className="column">
+                                                <ProjectDec className="text is-size-5">{item.body}</ProjectDec>
+                                                <br />
+                                                <a href={item.live?.url} className="button is-primary text">{item.live?.text}</a>
+                                            </div>
+                                            <ProjectImg className="column" src={item.img} alt="project" />
                                         </div>
                                         <br />
                                     </Project>
