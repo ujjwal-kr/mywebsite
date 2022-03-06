@@ -34,7 +34,7 @@ export const projectData: IProject[] = [
     {
         title: 'Ram',
         source: 'https://github.com/ujjwal-kr/ram',
-        body: 'I made my first programming language (stack based) using Rust. With vectors, strings, conditional jumps, IO, and basic filesytem operations. I will improve the language to be able to make a basic interpreter with it in future.',
+        body: 'I made my first programming language (stack based) using Rust. With vectors, strings, conditional jumps, IO, and basic filesytem operations. I improved the language enough to make a basic interpreter in it, hosted in the same repository.',
         live: {text: 'Source', url :"https://github.com/ujjwal-kr/ram"},
         img: ramImg,
     },
