@@ -1,6 +1,6 @@
 import haImg from "./assets/ha.png"
 import marvelImg from "./assets/marvel.png"
-import ramImg from "./assets/ram.png"
+// import ramImg from "./assets/ram.png"
 import pvImg from "./assets/pv.png"
 
 export interface IProject {
