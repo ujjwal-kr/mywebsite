@@ -31,13 +31,13 @@ export const projectData: IProject[] = [
         live: {text: 'Visit', url: "https://positivevibes.vercel.app"},
         img: pvImg,
     },
-  //  {
-    //    title: 'Ram',
-    //    source: 'https://github.com/ujjwal-kr/ram',
-     //   body: 'I made my first programming language (stack based) using Rust. With vectors, strings, conditional jumps, IO, and basic filesytem operations. I improved the language enough to make a basic interpreter in it, hosted in the same repository.',
-      //  live: {text: 'Source', url :"https://github.com/ujjwal-kr/ram"},
-     //   img: ramImg,
-    // },
+    {
+        title: 'Ram',
+    source: 'https://github.com/ujjwal-kr/ram',
+     body: 'I made my first programming language (stack based) using Rust. With vectors, strings, conditional jumps, IO, and basic filesytem operations. I improved the language enough to make a basic interpreter in it, hosted in the same repository.',
+     live: {text: 'Source', url :"https://github.com/ujjwal-kr/ram"},
+     img: ramImg,
+    },
     {
         title: 'EpicTracker',
         source: 'https://github.com/ujjwal-kr/epictracker',
