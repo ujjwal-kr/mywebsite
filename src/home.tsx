@@ -111,7 +111,7 @@ function Blog() {
             <Description>
                 <DesHeading className="has-text-primary stiff">Publishments</DesHeading>
                 <Whoami className="text">
-                    Writing is one of my hobby. But spending more time into it is what I want to accomplish. I have written a bit on <a href="https://ujjwalkr.medium.com/">My Meduim Page</a> and also starting a <a href="https://github.com/kekwlabs/kek-blogs">blogging platform</a> for more technical writing and publising stuff from and for the community.
+                    Writing is one of my hobby. But spending more time into it is what I want to accomplish. Please check out <a href="https://crackhead-system.vercel.app">CrackHead Systems</a>, a systems programming and tech blog I maintain.
                 </Whoami>
             </Description>
         </div>
