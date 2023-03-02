@@ -18,7 +18,7 @@ export const projectData: IProject[] = [
         title: 'HackArmour',
         source: 'https://github.com/hackarmour',
         body: 'Found this team in the late 2020 to store infosec resources, now running a community of awesome people organizing events and creating a search engine indexing best infosec resources. All thanks to the amazing staff and contributors.',
-        live: {text: 'Read More', url: 'https://hackarmour.com'},
+        live: {text: 'Read More', url: 'https://hackarmour.github.io/whitepaper/Hackarmour.pdf'},
         img: "https://media.discordapp.net/attachments/936106022576201769/1053176346500669532/image.png",
     },
     {
