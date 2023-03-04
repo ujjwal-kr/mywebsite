@@ -36,6 +36,13 @@ export const projectData: IProject[] = [
         img: "https://media.discordapp.net/attachments/936106022576201769/1043010332005761024/image.png",
     },
     {
+        title: 'Redis Rust',
+        source: 'https://github.com/ujjwal-kr/redis-rust',
+        body: 'A clone of the redis in-memory databse and protocol featuring some basic commands like SET, GET, DEL, PLUSH etc to perform IO, written in the rust programming language as a part of codecrafters challenge.',
+        live: {text: 'Source', url :"https://github.com/ujjwal-kr/redis-rust"},
+        img: "https://user-images.githubusercontent.com/38783809/221806792-74f4f4e2-c3b9-401e-bfe8-d80c70f7cf74.png",
+    },
+    {
         title: 'EpicTracker',
         source: 'https://github.com/ujjwal-kr/epictracker',
         body: 'A demo of how can I track you using fingerprinting and some automated lookups and stuff, using modern Javascript APIs to identify device metadata and creating a SHA1 hash and sending it to the server so that the device can be recognized later',
