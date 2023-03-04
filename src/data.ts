@@ -38,7 +38,7 @@ export const projectData: IProject[] = [
     {
         title: 'Redis Rust',
         source: 'https://github.com/ujjwal-kr/redis-rust',
-        body: 'A clone of the redis in-memory databse and protocol featuring some basic commands like SET, GET, DEL, PLUSH etc to perform IO, written in the rust programming language as a part of codecrafters challenge.',
+        body: 'A clone of the redis in-memory database and protocol featuring some basic commands like SET, GET, DEL, LPUSH etc to perform IO, written in the rust programming language as a part of codecrafters challenge.',
         live: {text: 'Source', url :"https://github.com/ujjwal-kr/redis-rust"},
         img: "https://user-images.githubusercontent.com/38783809/221806792-74f4f4e2-c3b9-401e-bfe8-d80c70f7cf74.png",
     },
